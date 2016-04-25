@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ProtoOne</string>
+    <string name="welcome">WELCOME TO DY-NA-MAC</string>
+    <string name="inputHeading">INPUT</string>
+    <string name="outputHeading">OUTPUT</string>
+    <string name="processButton">PROCESS</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="zeroValue">0</string>
+    <string name="zeroDollar">$0</string>
+    <string name="app_name2">Test App</string>
+    <string name="openCamera">Open Camera</string>
+</resources>

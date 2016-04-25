@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_background_black"
+        android:orientation="vertical"
+        tools:context="sinhaguild.protoone.MainActivity">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:text="@string/welcome"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="fonts/BebasNeue Regular.ttf"
+            android:paddingTop="20dp"
+            android:text="@string/inputHeading"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/plusButton"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_margin="10dp"
+                android:onClick="incrementOne"
+                android:background="@drawable/plus_button"/>
+
+            <TextView
+                android:id="@+id/inputValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="@string/zeroValue"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/minusButton"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_margin="10dp"
+                android:onClick="decrementOne"
+                android:background="@drawable/minus_button" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_margin="12dp"
+                android:buttonTint="@android:color/white"
+                android:fontFamily="sans-serif"
+                android:text="x 10"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:paddingTop="30dp"
+            android:text="@string/outputHeading"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/outputValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/zeroDollar"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="submitOrder"
+            android:text="@string/processButton"
+            android:textAlignment="center" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/selectPhotoButton"
+            android:background="@drawable/plus_button"
+            android:onClick=""/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/selectPhotoIV"
+            android:scaleType="centerCrop"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:id="@+id/editText"
+            android:hint="@string/welcome"
+            android:inputType="textCapWords"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>
